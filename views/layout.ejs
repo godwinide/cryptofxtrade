@@ -26,22 +26,16 @@
 
 <body>
     <%-body%>
-       <!-- chat bot -->
-       <script src="//code.tidio.co/6jddzbcqqir11xgtbbl6g7xbxurxsmly.js" async></script>
-       <!-- GetButton.io widget -->
-        <!-- <script type="text/javascript">
-            (function () {
-                var options = {
-                whatsapp: "+12185030592", // WhatsApp number
-                    call_to_action: "Message us", // Call to action
-                    position: "left", // Position may be 'right' or 'left'
-                };
-                var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-            })();
-        </script> -->
+        <!-- Begin of Chaport Live Chat code -->
+        <script type="text/javascript">
+            (function(w,d,v3){
+            w.chaportConfig = {
+            appId : '629f68773485b852a2215650'
+            };
+            
+            if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+        </script>
+        <!-- End of Chaport Live Chat code -->
         <script>
             var collapseElementList = [].slice.call(document.querySelectorAll('.accordion'))
             var collapseList = collapseElementList.map(function (collapseEl) {
@@ -52,3 +46,5 @@
 </body>
 
 </html>
+
+
